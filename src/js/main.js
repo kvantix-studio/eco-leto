@@ -5,8 +5,27 @@ $(document).ready(function() {
         animateAnchor: true,
         autoScrolling: true,
         scrollHorizontally: false,
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         paddingTop: '90px',
+        navigation: true,
+        navigationPosition: 'right',
+        css3:false,
         verticalCentered: false
     });
 });
+
+(function() {
+
+    var hamburger = {
+      navToggle: document.querySelector('.nav-toggle'),
+      nav: document.querySelector('nav'),
+  
+      doToggle: function(e) {
+        this.navToggle.classList.toggle('expanded');
+        this.nav.classList.toggle('expanded');
+      }
+    };
+  
+    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  
+  }());

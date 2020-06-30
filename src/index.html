@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Эко-лето</title>
+  <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/jquery.fullpage.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,55 +13,72 @@
   
   <div class="wrapper">
 
-    <header class="header">
-      <nav>
-        <ul class="menu__list" id="menu">
-          <li data-menuanchor="section-2"><a href="#section-2" class="menu__link">О компании</a></li>
-          <li data-menuanchor="section-3"><a href="#section-3" class="menu__link">Технология производства</a></li>
-          <li data-menuanchor="section-4"><a href="#section-4" class="menu__link">Преимущества продукции</a></li>
-          <li data-menuanchor="section-5"><a href="#section-5" class="menu__link">Каталог</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- <header class="header">
+        <nav>
+          <ul class="menu__list" id="menu">
+            <li data-menuanchor="section-2"><a href="#section-2" class="menu__link">О компании</a></li>
+            <li data-menuanchor="section-3"><a href="#section-3" class="menu__link">Технология производства</a></li>
+            <li data-menuanchor="section-4"><a href="#section-4" class="menu__link">Преимущества продукции</a></li>
+            <li data-menuanchor="section-5"><a href="#section-5" class="menu__link">Каталог</a></li>
+          </ul>
+        </nav>
+    </header> -->
+
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li data-menuanchor="section-2"><a href="#section-2" class="menu__link">О компании</a></li>
+        <li data-menuanchor="section-3"><a href="#section-3" class="menu__link">Технология производства</a></li>
+        <li data-menuanchor="section-4"><a href="#section-4" class="menu__link">Преимущества продукции</a></li>
+        <li data-menuanchor="section-5"><a href="#section-5" class="menu__link">Каталог</a></li>
+      </ul>
+    </nav>
 
     <div id="fullpage">
 
       <div class="section" id="main">
 
-        <div class="container">
-
           <div class="main">
-            <div class="title">Эколето</div>
-            <div class="subtitle">здоровое питание</div>
+            <div class="main__body">
+              <img src="img/main-logo.png" alt="Эколето">
+            </div>
           </div>
           <!-- /.main -->
-
-        </div>
-        <!-- /.container -->
 
       </div>
       <!-- /.section -->
 
       <div class="section" id="company">
 
-        <div class="container">
-
-          2-й слайд
-
-        </div>
-        <!-- /.container -->
+          <div class="company__content">
+            <div class="section__text">
+              <p>ООО «ЭкоЛето» - промышленная компания по производству широкого спектра экологически чистых продуктов питания без примесей и консервантов.</p>
+              <p>Основная ассортиментная линейка - производство дегидрированных фруктовых и овощных чипсов и сушеной ягоды.</p>
+              <p>Сушка производится при низких температурах до 40 градусов, что позволяет сохранить витамины и полезные микроэлементы свежих фруктов, овощей, ягод в конечном продукте.</p>
+            </div>
+            <div class="section__logo">
+              <img src="img/logo.png" alt="ЭкоЛето">
+            </div>
+          </div>
+          <!-- /.company__content -->
 
       </div>
       <!-- /.section -->
 
       <div class="section" id="technology">
 
-        <div class="container">
-
-          3-й слайд
-
-        </div>
-        <!-- /.container -->
+          <div class="technology__content">
+            <div class="section__text">
+              <p>В процессе производства используются современные сушильные камеры конвекционного типа, что позволяет проводить бережное извлечение влаги при низких температурах и сохранить в конечном продукте все свойства спелых овощей, фруктов и ягод.</p>
+              <p>Засчет извлечения влаги усушка продукта происходит в среднем в 10 раз, таким образом в 30 гр сушеных фруктовых или овощных чипсов и ягод содержится 300 гр свежего продукта.</p>
+            </div>
+            <div class="section__logo">
+              <img src="img/logo.png" alt="ЭкоЛето">
+            </div>
+          </div>
+          <!-- /.technology__content -->
 
       </div>
       <!-- /.section -->
@@ -69,7 +87,47 @@
 
         <div class="container">
 
-          4-й слайд
+          <div class="advantage__content">
+            <div class="section__title title--center">Преимущества продукции</div>
+            <div class="advantage__list">
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  без красителей и консервантов
+                </div> 
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  без вредных добавок
+                </div> 
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  укрепляет иммунитет
+                </div> 
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  полезно для детей
+                </div> 
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  SUPER FOOD
+                </div>
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  без глютена
+                </div> 
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-item__text">
+                  VEGAN
+                </div> 
+              </div>
+            </div>
+          </div>
+          <!-- /.advantage__content -->
 
         </div>
         <!-- /.container -->
