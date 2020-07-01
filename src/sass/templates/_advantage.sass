@@ -1,0 +1,47 @@
+#advantage 
+    position: relative
+    background: url('../img/advantage-bg.jpg') no-repeat
+    background-size: cover 
+    background-position-y: top
+
+.advantage
+    &__list 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__wrapper
+        position: absolute
+        bottom: 0
+        left: 0
+        background: url('../img/advantage-circle.png') no-repeat
+        width: 800px
+        background-size: cover 
+        padding: 70px 60px 60px 60px
+    &__text 
+        font-size: 1.1rem
+        max-width: 70%
+        max-height: 85%
+        overflow: auto
+        padding-right: 0.5em
+        font-weight: 300
+    &-item 
+        font-size: 1rem
+        position: relative
+        width: 15.75em
+        height: 10.90em
+        background: url('../img/item.png') no-repeat
+        background-size: cover
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 2.5em 
+        margin: 1.25em 0.625em
+        &__text
+            width: 7.5em
+            text-align: center
+            color: #ffffff
+            font-size: 0.8rem
+            @media ( max-width: 1400px )
+                font-size: 0.7rem
+        @media ( max-width: 1400px )
+            font-size: 0.8rem
