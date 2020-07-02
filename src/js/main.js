@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 (function() {
-
+  
     var hamburger = {
       navToggle: document.querySelector('.nav-toggle'),
       nav: document.querySelector('nav'),
