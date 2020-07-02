@@ -1,0 +1,30 @@
+#retail 
+    position: relative
+    background: url('../img/retail-bg.jpg') no-repeat
+    background-size: 50%
+    background-position-y: center
+
+.retail
+    &__content 
+        position: absolute
+        background-color: #ffffff
+        top: 0
+        right: 0
+        bottom: 0
+        width: 50%
+        height: 100vh
+        padding: 5.6em 3.75em 3.75em 3.75em
+        clip-path: circle(100% at 100% 50%)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+    &__item
+        font-size: 1.5rem
+        width: 100%
+        max-height: 85%
+        overflow: auto
+        padding-right: 0.5em
+        font-weight: 300
+        @media ( max-width: 1430px )
+            font-size: 1.2rem

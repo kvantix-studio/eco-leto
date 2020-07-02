@@ -1,52 +1,75 @@
 #catalog
     position: relative
     background: url('../img/catalog/catalog-bg-left.jpg') no-repeat
-    background-size: 22%
+    background-size: 26%
     background-position-y: center
 
 #catalog-2
     position: relative
     background: url('../img/catalog/catalog-2-bg-left.jpg') no-repeat
-    background-size: 22%
+    background-size: 26%
     background-position-y: center
+.catalog__title.red
+    background-color: #FF104B
 
 #catalog-3
     position: relative
     background: url('../img/catalog/catalog-3-bg-left.jpg') no-repeat
-    background-size: 22%
+    background-size: 26%
     background-position-y: center
+.catalog__title.green
+    background-color: #6CA800
+
+#catalog-4
+    position: relative
+    background: url('../img/catalog/catalog-4-bg-left.jpg') no-repeat
+    background-size: 26%
+    background-position-y: center
+.catalog__title.tomat
+    background-color: #D80001
 
 .catalog
     &__wrapper
         position: relative
         display: flex
-        justify-content: flex-end
         flex-direction: column
-        max-width: 85%
-        margin-left: 25%
+        margin-left: 26%
         background-color: #ffffff
     &__title
         position: absolute
-        top: -55px
-        right: -60px
-        font-size: 3rem
-        line-height: 1
-        letter-spacing: 20px
+        font-size: 2.3rem
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
         text-transform: uppercase
         font-weight: 300
         color: #ffffff
         background-color: #fc961d
-        padding: 10px 20px 2px 20px
+        padding: 0.4em 0.4em 0.27em 0.675em
+        &::after
+            content: ''
+            position: absolute
+            top: 2px
+            right: -7.7em
+            background: url('../img/logo.png') no-repeat
+            background-size: cover
+            width: 5.8em
+            height: 1.32em
         @media ( max-width: 1400px )
             font-size: 2rem
     &__list
+        font-size: 1rem
         display: flex
         flex-wrap: wrap
-        margin-top: 50px
+        margin-top: 7.875em
+        margin-left: 2.8em
+        margin-right: 4.375em
+        @media ( max-width: 1400px )
+            font-size: 0.65rem
     &-item 
-        width: 33.33%
+        width: 20.6em
+        margin: 0 2.1em 2em 2.1em
         font-size: 1rem
-        margin-bottom: 2.5em
         transition: all 0.3s
         display: flex
         justify-content: center
@@ -54,50 +77,62 @@
         &__wrapper
             font-size: 1rem
             padding: 1.25em
-            width: 80%
+            width: 95%
             background-color: #ffffff
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            transition: all 0.3s
+            transition: transform 0.3s
             &:hover
-                // outline: 2px solid #df7f0b
-                transform: scale(1.04)
-                box-shadow: 13px 12px 50px -14px rgba(0,0,0,0.44)
+                outline: 1px solid #fc961d
+                transform: scale(1.03)
+                .catalog-item__title
+                    &::before
+                        transition: width 0.3s
+                        width: 50%
             @media ( max-width: 1400px )
                 font-size: 0.7rem
         @media ( max-width: 1400px )
-            font-size: 0.45rem
+            font-size: 0.75rem
         &__title
+            position: relative
             text-transform: uppercase
             color: rgba(0,0,0,0.35)
-            font-size: 2.5rem
+            font-size: 2.3rem
             font-weight: 300
             letter-spacing: 5px
             line-height: 1
             margin-bottom: 0.5em
+            &::before
+                content: ''
+                position: absolute
+                bottom: -3px
+                left: 0
+                width: 0
+                height: 1.5px
+                background-color: #fc961d
             @media ( max-width: 1400px )
                 font-size: 1.5rem
         &__img
             font-size: 1rem
-            max-width: 13.4em
+            width: 13.4em
             img 
                 width: 100%
             @media ( max-width: 1400px )
-                font-size: 0.7rem
+                font-size: 0.65rem
         &__footer
             font-size: 1rem
             display: flex
-            margin-top: 1.25em
+            margin-top: 1.20em
             @media ( max-width: 1400px )
-                font-size: 0.7rem
+                font-size: 0.6rem
         &__details-btn
             font-size: 1rem
             cursor: pointer
             border: none
-            padding: 1em 1.7em
-            margin-right: 0.625em
+            padding: 0.7em 1.2em
+            margin-right: 0.5em
             border-radius: 7px
             background-color: transparent 
             transition: all 0.3s
@@ -109,7 +144,7 @@
             font-size: 1rem
             cursor: pointer
             display: block
-            padding: 1em 1.7em
+            padding: 0.9em 1.4em
             border: none
             background-color: #fc961d
             color: #ffffff
@@ -121,4 +156,3 @@
                 background-color: #df7f0b
             @media ( max-width: 1400px )
                 font-size: 0.8rem
-            

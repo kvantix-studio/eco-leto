@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7'],
+        anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6', 'section-7', 'section-8', 'section-9'],
         menu: '#menu',
-        animateAnchor: true,
+        animateAnchor: false,
         autoScrolling: true,
         scrollHorizontally: false,
         paddingTop: '90px',

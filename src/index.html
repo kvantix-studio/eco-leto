@@ -7,6 +7,7 @@
   <title>Эко-лето</title>
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/jquery.fullpage.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -42,8 +43,9 @@
       <div class="section" id="company">
 
           <div class="company__content">
-            <div class="section__text">
-              <p>ООО «ЭкоЛето» - промышленная компания по производству широкого спектра экологически чистых продуктов питания без примесей и консервантов.</p>
+            <div class="company__title">О компании</div>
+            <div class="company__text">
+              <p><span>ООО «ЭкоЛето»</span> - промышленная компания по производству широкого спектра экологически чистых продуктов питания без примесей и консервантов.</p>
               <p>Основная ассортиментная линейка - производство дегидрированных фруктовых и овощных чипсов и сушеной ягоды.</p>
               <p>Сушка производится при низких температурах до 40 градусов, что позволяет сохранить витамины и полезные микроэлементы свежих фруктов, овощей, ягод в конечном продукте.</p>
             </div>
@@ -59,11 +61,12 @@
       <div class="section" id="technology">
 
           <div class="technology__content">
-            <div class="section__text">
+            <div class="technology__title green">Технология</div>
+            <div class="company__text">
               <p>В процессе производства используются современные сушильные камеры конвекционного типа, что позволяет проводить бережное извлечение влаги при низких температурах и сохранить в конечном продукте все свойства спелых овощей, фруктов и ягод.</p>
               <p>Засчет извлечения влаги усушка продукта происходит в среднем в 10 раз, таким образом в 30 гр сушеных фруктовых или овощных чипсов и ягод содержится 300 гр свежего продукта.</p>
             </div>
-            <div class="section__logo">
+            <div class="technology__logo">
               <img src="img/logo.png" alt="ЭкоЛето">
             </div>
           </div>
@@ -130,94 +133,87 @@
 
       <div class="section" id="catalog">
 
-        <div class="container">
+        <div class="catalog__wrapper">
+          <div class="catalog__title">Солнце тропиков</div>
+          <div class="catalog__list">
 
-            <div class="catalog__wrapper">
-              <div class="catalog__title">Солнце тропиков</div>
-              <div class="catalog__list">
-
-                <div class="catalog-item">
-                  <div class="catalog-item__wrapper">
-                    <div class="catalog-item__title">Манго</div>
-                    <div class="catalog-item__img">
-                      <img src="img/catalog/mango.jpg" alt="Манго">
-                    </div>
-                    <div class="catalog-item__footer">
-                      <button class="catalog-item__details-btn">Подробнее</button>
-                      <button class="catalog-item__order-btn">Заказать</button>
-                    </div>
-                  </div>
+            <div class="catalog-item">
+              <div class="catalog-item__wrapper">
+                <div class="catalog-item__title">Манго</div>
+                <div class="catalog-item__img">
+                  <img src="img/catalog/mango.jpg" alt="Манго">
                 </div>
-
-                <div class="catalog-item">
-                  <div class="catalog-item__wrapper">
-                    <div class="catalog-item__title">Апельсин</div>
-                    <div class="catalog-item__img">
-                      <img src="img/catalog/apelsin.jpg" alt="Апельсин">
-                    </div>
-                    <div class="catalog-item__footer">
-                      <button class="catalog-item__details-btn">Подробнее</button>
-                      <button class="catalog-item__order-btn">Заказать</button>
-                    </div>
-                  </div>
+                <div class="catalog-item__footer">
+                  <button class="catalog-item__details-btn">Подробнее</button>
+                  <button class="catalog-item__order-btn">Заказать</button>
                 </div>
-
-                <div class="catalog-item">
-                  <div class="catalog-item__wrapper">
-                    <div class="catalog-item__title">Ананас</div>
-                    <div class="catalog-item__img">
-                      <img src="img/catalog/ananas.jpg" alt="Ананас">
-                    </div>
-                    <div class="catalog-item__footer">
-                      <button class="catalog-item__details-btn">Подробнее</button>
-                      <button class="catalog-item__order-btn">Заказать</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="catalog-item">
-                  <div class="catalog-item__wrapper">
-                    <div class="catalog-item__title">Банан</div>
-                    <div class="catalog-item__img">
-                      <img src="img/catalog/banan.jpg" alt="Банан">
-                    </div>
-                    <div class="catalog-item__footer">
-                      <button class="catalog-item__details-btn">Подробнее</button>
-                      <button class="catalog-item__order-btn">Заказать</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="catalog-item">
-                  <div class="catalog-item__wrapper">
-                    <div class="catalog-item__title">Инжир</div>
-                    <div class="catalog-item__img">
-                      <img src="img/catalog/ingir.jpg" alt="Инжир">
-                    </div>
-                    <div class="catalog-item__footer">
-                      <button class="catalog-item__details-btn">Подробнее</button>
-                      <button class="catalog-item__order-btn">Заказать</button>
-                    </div>
-                  </div>
-                </div>
-
               </div>
-              <!-- /.catalog__list -->
             </div>
-            <!-- /.catalog__wrapper -->
 
+            <div class="catalog-item">
+              <div class="catalog-item__wrapper">
+                <div class="catalog-item__title">Апельсин</div>
+                <div class="catalog-item__img">
+                  <img src="img/catalog/apelsin.jpg" alt="Апельсин">
+                </div>
+                <div class="catalog-item__footer">
+                  <button class="catalog-item__details-btn">Подробнее</button>
+                  <button class="catalog-item__order-btn">Заказать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__wrapper">
+                <div class="catalog-item__title">Ананас</div>
+                <div class="catalog-item__img">
+                  <img src="img/catalog/ananas.jpg" alt="Ананас">
+                </div>
+                <div class="catalog-item__footer">
+                  <button class="catalog-item__details-btn">Подробнее</button>
+                  <button class="catalog-item__order-btn">Заказать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__wrapper">
+                <div class="catalog-item__title">Банан</div>
+                <div class="catalog-item__img">
+                  <img src="img/catalog/banan.jpg" alt="Банан">
+                </div>
+                <div class="catalog-item__footer">
+                  <button class="catalog-item__details-btn">Подробнее</button>
+                  <button class="catalog-item__order-btn">Заказать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__wrapper">
+                <div class="catalog-item__title">Инжир</div>
+                <div class="catalog-item__img">
+                  <img src="img/catalog/ingir.jpg" alt="Инжир">
+                </div>
+                <div class="catalog-item__footer">
+                  <button class="catalog-item__details-btn">Подробнее</button>
+                  <button class="catalog-item__order-btn">Заказать</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.catalog__list -->
         </div>
-        <!-- /.container -->
+        <!-- /.catalog__wrapper -->
 
       </div>
       <!-- /.section -->
 
       <div class="section" id="catalog-2">
 
-        <div class="container">
-
             <div class="catalog__wrapper">
-              <div class="catalog__title">Спелые фрукты</div>
+              <div class="catalog__title red">Спелые фрукты</div>
               <div class="catalog__list">
 
                 <div class="catalog-item">
@@ -303,18 +299,13 @@
             </div>
             <!-- /.catalog__wrapper -->
 
-        </div>
-        <!-- /.container -->
-
       </div>
       <!-- /.section -->
 
       <div class="section" id="catalog-3">
 
-        <div class="container">
-
             <div class="catalog__wrapper">
-              <div class="catalog__title">Дары природы</div>
+              <div class="catalog__title green">Дары природы</div>
               <div class="catalog__list">
 
                 <div class="catalog-item">
@@ -400,8 +391,60 @@
             </div>
             <!-- /.catalog__wrapper -->
 
+      </div>
+      <!-- /.section -->
+
+      <div class="section" id="catalog-4">
+
+            <div class="catalog__wrapper">
+              <div class="catalog__title tomat">Сочные овощи</div>
+              <div class="catalog__list">
+
+                <div class="catalog-item">
+                  <div class="catalog-item__wrapper">
+                    <div class="catalog-item__title">Томат</div>
+                    <div class="catalog-item__img">
+                      <img src="img/catalog/brusnika.jpg" alt="Томат">
+                    </div>
+                    <div class="catalog-item__footer">
+                      <button class="catalog-item__details-btn">Подробнее</button>
+                      <button class="catalog-item__order-btn">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog-item item--w40">
+                  <div class="catalog-item__wrapper">
+                    <div class="catalog-item__title">Кабачок</div>
+                    <div class="catalog-item__img">
+                      <img src="img/catalog/limonnik.jpg" alt="Кабачок">
+                    </div>
+                    <div class="catalog-item__footer">
+                      <button class="catalog-item__details-btn">Подробнее</button>
+                      <button class="catalog-item__order-btn">Заказать</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.catalog__list -->
+            </div>
+            <!-- /.catalog__wrapper -->
+
+      </div>
+      <!-- /.section -->
+
+      <div class="section" id="retail">
+
+        <div class="retail__content">
+          <div class="retail__item">
+            
+          </div>
+          <div class="section__logo">
+            <img src="img/logo.png" alt="ЭкоЛето">
+          </div>
         </div>
-        <!-- /.container -->
+        <!-- /.retail__content -->
 
       </div>
       <!-- /.section -->
@@ -414,6 +457,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.fullpage.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

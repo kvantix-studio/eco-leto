@@ -1,23 +1,46 @@
 #company 
     position: relative
     background: url('../img/company-bg.jpg') no-repeat
-    background-size: cover 
-    background-position-y: bottom
+    background-size: 50%
+    background-position-y: center
+    background-position-x: right
 
 .company
     &__content 
         font-size: 1rem
-        position: absolute
+        position: relative
         background-color: #ffffff
-        top: 0
-        left: 0
-        bottom: 0
         width: 50%
-        height: 100vh
-        padding: 5.6em 3.75em 3.75em 4.375em
-        clip-path: circle(100% at 0 50%)
+        height: 100%
+        padding: 10em 3.75em 3.75em 4.375em
         display: flex
         flex-direction: column
         justify-content: space-between
         @media ( max-width: 1430px )
-            font-size: 0.6rem
+            font-size: 0.7rem
+    &__title
+        position: absolute
+        top: 0
+        right: 0
+        font-size: 2.3rem
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1430px )
+            font-size: 2rem
+    &__text 
+        // text-align: justify
+        font-size: 1.5rem
+        max-height: 85%
+        overflow: auto
+        padding-right: 0.5em
+        font-weight: 300
+        span 
+            border-bottom: 2px solid #fc961d
+        @media ( max-width: 1430px )
+            font-size: 1.07rem

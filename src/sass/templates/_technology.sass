@@ -1,25 +1,57 @@
 #technology 
     position: relative
     background: url('../img/technology-bg.jpg') no-repeat
-    background-size: cover 
-    background-position-y: bottom
+    background-size: 50%
+    background-position-y: center
+    background-position-x: left
 
 .technology
     &__content 
-        font-size: 
-        position: absolute
+        font-size: 1rem
+        position: relative
         background-color: #ffffff
-        top: 0
-        right: 0
-        bottom: 0
         width: 50%
-        height: 100vh
-        padding: 5.6em 3.75em 3.75em 3.75em
-        clip-path: circle(100% at 100% 50%)
+        height: 100%
+        margin-left: 50%
+        padding: 10em 3.75em 3.75em 4.375em
         display: flex
         flex-direction: column
         justify-content: space-between
         align-items: flex-end
+        @media ( max-width: 1430px )
+            font-size: 0.7rem
+    &__title
+        position: absolute
+        top: 0
+        left: 0
+        font-size: 2.3rem
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1430px )
+            font-size: 2rem
+    &__text 
+        // text-align: justify
+        font-size: 1.5rem
+        max-height: 85%
+        overflow: auto
+        padding-right: 0.5em
+        font-weight: 300
+        @media ( max-width: 1430px )
+            font-size: 1.07rem
+    &__logo 
+        width: 21em
+        img 
+            width: 100%
+        @media ( max-width: 1430px )
+            font-size: 0.8rem
 
-.technology__content > .section__text 
+.technology__content > .technology__text 
     text-align: right
+.technology__title.green
+    background-color: #74A949
