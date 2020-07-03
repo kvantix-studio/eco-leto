@@ -1,30 +1,92 @@
 #retail 
     position: relative
     background: url('../img/retail-bg.jpg') no-repeat
-    background-size: 50%
-    background-position-y: center
+    background-size: 100%
+    background-position-y: top
 
 .retail
+    &-slider
+        &__prev
+            font-size: 1rem
+            background: url('../img/arrow-prev.svg') no-repeat
+            background-size: cover
+            width: 3.125em
+            height: 5em
+            cursor: pointer
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 1.875em
+            @media ( max-width: 1150px )
+                font-size: 0.5rem
+        &__next
+            font-size: 1rem
+            background: url('../img/arrow-prev.svg') no-repeat
+            background-size: cover
+            width: 3.125em
+            height: 5em
+            cursor: pointer
+            position: absolute
+            top: 50%
+            transform: translateY(-50%) rotate(180deg)
+            right: 1.875em
+            @media ( max-width: 1150px )
+                font-size: 0.5rem
     &__content 
+        font-size: 1rem
+        width: 100%
+        padding: 3.125em
         position: absolute
-        background-color: #ffffff
-        top: 0
-        right: 0
+        top: 50%
         bottom: 0
-        width: 50%
-        height: 100vh
-        padding: 5.6em 3.75em 3.75em 3.75em
-        clip-path: circle(100% at 100% 50%)
+        background-color: #ffffff
         display: flex
         flex-direction: column
-        justify-content: space-between
-        align-items: flex-end
-    &__item
-        font-size: 1.5rem
-        width: 100%
-        max-height: 85%
-        overflow: auto
-        padding-right: 0.5em
+        justify-content: center
+        @media ( max-width: 1740px )
+            font-size: 0.5rem
+    &__list 
+        display: flex
+        justify-content: center
+    &-item
+        display: flex !important
+        justify-content: center !important
+        align-items: center
+        margin: 0 auto !important
+        width: 80% !important
+        font-size: 1rem
+        padding: 0 0.5em
         font-weight: 300
+        overflow: hidden
+        border: 1px solid #fc961d
+        img 
+            width: 100%
         @media ( max-width: 1430px )
-            font-size: 1.2rem
+            font-size: 0.8rem
+    &__title
+        position: absolute
+        top: -50%
+        transform: translateY(-50%)
+        right: 50%
+        transform: translateX(50%)
+        font-size: 2.3rem
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1660px )
+            font-size: 1.8rem
+        @media ( max-width: 1300px )
+            font-size: 1.5rem
+        @media ( max-width: 1090px )
+            font-size: 1.3rem
+
+.retail-slider .slick-list 
+    width: 85%
+.retail-slider .slick-slide 
+    display: flex !important
+    justify-content: center !important

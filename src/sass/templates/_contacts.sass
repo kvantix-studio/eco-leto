@@ -1,0 +1,110 @@
+#contacts 
+    position: relative
+    background: url('../img/contacts-bg.jpg') no-repeat
+    background-size: 100%
+    background-position-y: bottom
+
+.contacts
+    &__content
+        height: 50%
+        background-color: #ffffff
+    &__title
+        position: absolute
+        top: 1.8em
+        transform: translateY(-50%)
+        right: 50%
+        transform: translateX(50%)
+        font-size: 2.3rem
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1660px )
+            font-size: 1.8rem
+        @media ( max-width: 1300px )
+            font-size: 1.5rem
+        @media ( max-width: 1090px )
+            font-size: 1.3rem
+    &__body
+        padding: 160px 50px 50px 50px
+        display: flex
+        width: 100%
+        height: 100%
+        justify-content: center
+        align-items: center
+    &__logo
+        width: 400px
+        padding-right: 40px
+        img 
+            width: 100%
+    &__info
+        width: 400px
+        padding-left: 40px
+    &__address
+        padding-bottom: 15px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 12px
+            left: -25px
+            background: url('../img/map.svg') no-repeat
+            background-size: cover
+            width: 18px
+            height: 18px
+        address 
+            font-style: normal
+            text-transform: uppercase
+            color: rgba(0,0,0,0.55)
+            font-size: 1.3rem
+            font-weight: 300
+            letter-spacing: 5px
+            line-height: 1.2
+    &__tel
+        position: relative
+        padding-bottom: 15px
+        text-transform: uppercase
+        font-size: 1.3rem
+        font-weight: 300
+        letter-spacing: 5px
+        line-height: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -25px
+            background: url('../img/smartphone.svg') no-repeat
+            background-size: cover
+            width: 17px
+            height: 17px
+        a 
+            color: rgba(0,0,0,0.55)
+            &:hover
+                border-bottom: 1px solid #fc961d
+    &__email
+        position: relative
+        font-style: normal
+        text-transform: uppercase
+        color: rgba(0,0,0,0.55)
+        font-size: 1.3rem
+        font-weight: 300
+        letter-spacing: 5px
+        line-height: 1.2
+        &::before
+            content: ''
+            position: absolute
+            top: 3px
+            left: -25px
+            background: url('../img/email.svg') no-repeat
+            background-size: cover
+            width: 15px
+            height: 15px
+        a 
+            color: rgba(0,0,0,0.55)
+            &:hover
+                border-bottom: 1px solid #fc961d
+                
