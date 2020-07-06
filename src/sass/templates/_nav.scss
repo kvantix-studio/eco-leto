@@ -9,13 +9,15 @@
     cursor: pointer;
     font-size: 2rem;
     height: 100vh;
-    left: -50%;
+    left: -15.625em;
     padding: 6rem 3.6rem 3.6rem 3.6rem;
     position: fixed;
     top: 0;
-    width: 50%;
+    width: 15.625em;
     z-index: 1;
-    clip-path: circle(100% at -40% 50%);
+    @media ( max-width: 1400px ) {
+        font-size: 1.42rem;
+    }
 }
   
 .nav.expanded {
@@ -34,16 +36,20 @@
 }
 
 .nav-toggle {
+    font-size: 1rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 2rem;
-    left: 4.35rem;
+    height: 2em;
+    left: 4.35em;
     position: fixed;
-    top: 2.4rem;
-    width: 3rem;
+    top: 2.4em;
+    width: 3em;
     z-index: 2;
+    @media ( max-width: 1400px ) {
+        font-size: 0.8rem;
+    }
 }
 
 .nav-toggle:hover { 

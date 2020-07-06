@@ -7,7 +7,8 @@ $(document).ready(function() {
         scrollHorizontally: false,
         navigation: true,
         navigationPosition: 'right',
-        verticalCentered: false
+        verticalCentered: false,
+        responsiveWidth: 1300
     });
 });
 

@@ -20,6 +20,10 @@
         justify-content: space-around
         @media ( max-width: 1740px )
             font-size: 0.5rem
+        @media ( max-width: 1300px )
+            position: relative
+            background-color: transparent 
+            padding-top: 230px
     &__title
         position: absolute
         top: -50%
@@ -41,6 +45,16 @@
             font-size: 1.5rem
         @media ( max-width: 1090px )
             font-size: 1.3rem
+        @media ( max-width: 1300px )
+            position: relative
+            margin: 0 auto
+            margin-bottom: 150px
+            right: 0
+            transform: translateY(0%)
+        @media ( max-width: 1150px )
+            margin-bottom: 100px
+        @media ( max-width: 1050px )
+            margin-bottom: 50px
     &__list 
         display: flex
         flex-wrap: wrap
@@ -51,6 +65,7 @@
         font-weight: 300
         @media ( max-width: 1740px )
             font-size: 1rem
+            margin-bottom: 20px
     &-item 
         font-size: 1rem
         position: relative
@@ -93,14 +108,14 @@
                 height: 1.5px
                 background-color: #fc961d
             @media ( max-width: 1740px )
-                font-size: 0.8rem
-            @media ( max-width: 1360px )
-                font-size: 0.65rem
+                font-size: 0.70rem
             @media ( max-width: 1200px )
-                font-size: 0.55rem
+                font-size: 0.9rem
         @media ( max-width: 1740px )
             font-size: 0.75rem
         @media ( max-width: 1360px )
             font-size: 0.65rem
-        @media ( max-width: 1200px )
-            font-size: 0.55rem
+        // @media ( max-width: 1200px )
+        //     font-size: 0.55rem
+        @media ( max-width: 1300px )
+            font-size: 0.85rem

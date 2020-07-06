@@ -30,3 +30,161 @@
             height: 100%
     @media ( min-width: 1500px )
         font-size: 1.3rem
+
+.form
+    width: 100%
+    &__title
+        margin-bottom: 10px
+        color: rgba(0,0,0,0.55)
+        font-size: 1.3rem
+        text-align: center
+        font-weight: 300
+        letter-spacing: 5px
+        line-height: 1.2
+        text-transform: uppercase
+        @media ( max-width: 1400px )
+            font-size: 0.8rem
+    &__tel, .form__name
+        font-size: 1rem
+        margin-bottom: 0.625em
+        width: 100%
+        padding: 0.625em 1.25em
+        border: 1px solid #fc961d 
+        @media ( max-width: 1400px )
+            font-size: 0.8rem
+    &__btn 
+        margin: 0 auto
+        font-size: 1rem
+        cursor: pointer
+        display: block
+        padding: 0.9em 1.4em
+        border: none
+        background-color: #fc961d
+        color: #ffffff
+        text-transform: uppercase
+        font-weight: bold
+        border-radius: 7px
+        transition: all 0.3s
+        &:hover
+            background-color: #df7f0b
+        @media ( max-width: 1400px )
+            font-size: 0.8rem
+
+.modal 
+    &-details
+        display: none
+        z-index: 1000
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,0.5)
+        padding: 20px
+        overflow: auto
+        &__wrapper
+            width: 100%
+            // height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+        &__body
+            position: relative
+            width: 600px
+            padding: 20px
+            background-color: #ffffff
+        &__close
+            position: absolute
+            top: -8px
+            right: -60px
+            font-size: 50px
+            line-height: 30px
+            color: #ffffff
+            cursor: pointer
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__title
+            text-transform: uppercase
+            color: rgba(0,0,0,0.35)
+            font-size: 2.3rem
+            font-weight: 300
+            letter-spacing: 5px
+            line-height: 1
+        &__img
+            display: flex
+            justify-content: center
+            padding: 10px 0
+            img 
+                width: 315px
+                height: 220px
+        &__descr
+            margin-bottom: 20px
+            span 
+                color: rgba(0,0,0,1)
+                font-size: 1rem
+                line-height: 1
+                margin-bottom: 0.5em
+                font-weight: bold
+        &__btn
+            font-size: 1rem
+            cursor: pointer
+            display: block
+            padding: 0.9em 1.4em
+            border: none
+            background-color: #fc961d
+            color: #ffffff
+            text-transform: uppercase
+            font-weight: bold
+            border-radius: 7px
+            transition: all 0.3s
+            &:hover
+                background-color: #df7f0b
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+    &-order
+        display: none
+        z-index: 1000
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,0.5)
+        padding: 20px
+        overflow: auto
+        &__wrapper
+            width: 100%
+            // height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+        &__body
+            position: relative
+            width: 360px
+            padding: 20px
+            background-color: #ffffff
+        &__close
+            position: absolute
+            top: -8px
+            right: -60px
+            font-size: 50px
+            line-height: 30px
+            color: #ffffff
+            cursor: pointer
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__img
+            display: flex
+            justify-content: center
+            padding: 10px 0
+            img 
+                width: 315px
+                height: 220px
+
+

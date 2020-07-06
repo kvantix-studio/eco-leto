@@ -39,7 +39,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="company">
+      <div class="section fp-auto-height-responsive" id="company">
 
           <div class="company__content">
             <div class="company__title">О компании</div>
@@ -57,7 +57,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="technology">
+      <div class="section fp-auto-height-responsive" id="technology">
 
           <div class="technology__content">
             <div class="technology__title green">Технология</div>
@@ -74,7 +74,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="advantage">
+      <div class="section fp-auto-height-responsive" id="advantage">
 
           <div class="advantage__content">
             <div class="advantage__title blue">Преимущества продукции</div>
@@ -122,7 +122,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="catalog">
+      <div class="section fp-auto-height-responsive" id="catalog">
 
         <div class="catalog__wrapper">
           <div class="catalog__title">Солнце тропиков</div>
@@ -201,7 +201,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="catalog-2">
+      <div class="section fp-auto-height-responsive" id="catalog-2">
 
             <div class="catalog__wrapper">
               <div class="catalog__title red">Спелые фрукты</div>
@@ -293,7 +293,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="catalog-3">
+      <div class="section fp-auto-height-responsive" id="catalog-3">
 
             <div class="catalog__wrapper">
               <div class="catalog__title green">Дары природы</div>
@@ -385,7 +385,7 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="catalog-4">
+      <div class="section fp-auto-height-responsive" id="catalog-4">
 
             <div class="catalog__wrapper">
               <div class="catalog__title tomat">Сочные овощи</div>
@@ -425,10 +425,12 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="retail">
+      <div class="section fp-auto-height-responsive" id="retail">
 
         <div class="retail__content">
           <div class="advantage__title">Розничная упаковка</div>
+
+          <div class="retail__text"><p>Вес продукции в упаковке 30, 60 грамм</p></div>
 
           <div class="retail__list retail-slider">
 
@@ -468,22 +470,28 @@
       </div>
       <!-- /.section -->
 
-      <div class="section" id="contacts">
+      <div class="section fp-auto-height-responsive" id="contacts">
 
         <div class="contacts__content">
           <div class="contacts__title">Контакты</div>
 
           <div class="contacts__body">
 
-            <div class="contacts__logo">
-              <img src="img/logo.png" alt="Эколето">
-            </div>
-
             <div class="contacts__info">
               <div class="contacts__address"><address>г. Хабаровск, ул. Лермонтова, 3</address></div>
               <div class="contacts__tel"><a href="tel:+89098084398">8(909)808-43-98</a></div>
               <div class="contacts__tel"><a href="tel:+89241101881">8(924)110-18-81</a></div>
               <div class="contacts__email"><a href="mailto:ecoleto@bk.ru">ecoleto@bk.ru</a></div>
+            </div>
+
+            <div class="contacts__form">
+              <!-- <img src="img/logo.png" alt="Эколето"> -->
+              <form class="form" action="#" method="post">
+                <div class="form__title">Заказать обратный звонок</div>
+                <input class="form__tel" type="tel" name="phone" placeholder="Ваш телефон">
+                <input class="form__name" type="text" name="name" placeholder="Ваше имя">
+                <button class="form__btn">Отправить</button>
+              </form>
             </div>
             
           </div>
@@ -499,6 +507,54 @@
 
   </div>
   <!-- /.wrapper -->
+
+  <div class="modal-details">
+    <div class="modal-details__wrapper">
+      <div class="modal-details__body">
+        <div class="modal-details__close">&times;</div>
+        <div class="modal-details__title">Ананас</div>
+        <div class="modal-details__content">
+          <div class="modal-details__img">
+            <img src="img/catalog/ananas.jpg" alt="Ананас">
+          </div>
+          <div class="modal-details__descr">
+            <span>Состав:</span> ананас сушенный.<br>
+            <span>Пищевая ценность на 100 г:</span> белки – 0,6 г, жиры – 0 г, углеводы – 9 г.<br>
+            <span>Энергетическая ценность:</span> 48 Ккал/201 кДж.<br>
+            <span>Содержит витамины:</span> А, В1, В2, С, Е, РР<br>
+          </div>
+          <button class="modal-details__btn">Заказать</button>
+        </div>
+        <!-- /.modal-details__content -->
+      </div>
+      <!-- /.modal-details__body -->
+    </div>
+    <!-- /.modal-details__wrapper -->
+  </div>
+  <!-- /.modal-details -->
+
+  <div class="modal-order">
+    <div class="modal-order__wrapper">
+      <div class="modal-order__body">
+        <div class="modal-order__close">&times;</div>
+        <div class="modal-order__content">
+          <div class="modal-order__img">
+            <img src="img/catalog/ananas.jpg" alt="Ананас">
+          </div>
+          <form class="form" action="#">
+            <div class="form__title">Заказать Ананас</div>
+            <input class="form__tel" type="tel" name="phone" placeholder="Ваш телефон">
+            <input class="form__name" type="text" name="name" placeholder="Ваше имя">
+            <button class="form__btn">Заказать</button>
+          </form>
+        </div>
+        <!-- /.modal-order__content -->
+      </div>
+      <!-- /.modal-order__body -->
+    </div>
+    <!-- /.modal-order__wrapper -->
+  </div>
+  <!-- /.modal-order -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.fullpage.js"></script>
