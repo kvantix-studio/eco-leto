@@ -15,8 +15,14 @@
     top: 0;
     width: 15.625em;
     z-index: 1;
+    display: flex;
+    justify-content: center;
     @media ( max-width: 1400px ) {
         font-size: 1.42rem;
+    }
+    @media ( max-width: 520px ) {
+        width: 100%;
+        left: -100%;
     }
 }
   
@@ -42,9 +48,9 @@
     user-select: none;
     cursor: pointer;
     height: 2em;
-    left: 4.35em;
+    left: 4em;
     position: fixed;
-    top: 2.4em;
+    top: 4em;
     width: 3em;
     z-index: 2;
     @media ( max-width: 1400px ) {

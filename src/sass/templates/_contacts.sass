@@ -1,20 +1,40 @@
 #contacts 
     position: relative
-    background: url('../img/contacts-bg.jpg') no-repeat
-    background-size: 100%
-    background-position-y: bottom
+    background: url('../img/contacts-bg-2.jpg') no-repeat
+    background-size: 50%
+    background-position-y: center
+    background-position-x: right
+    @media ( max-width: 1280px )
+        background-size: contain
+
 
 .contacts
-    &__content
-        height: 50%
+    &__content 
+        font-size: 1rem
+        position: relative
         background-color: #ffffff
+        width: 50%
+        height: 100%
+        padding: 14em 3.75em 3.75em 4.375em
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media ( max-width: 1430px )
+            font-size: 0.7rem
+        @media ( max-width: 980px )
+            width: 100%
+            padding-bottom: 5em
+        @media ( max-width: 767px )
+            padding-top: 8em
+            padding-right: 1.75em 
+            padding-left: 1.755em
     &__title
         position: absolute
         top: 1.8em
-        transform: translateY(-50%)
-        right: 50%
-        transform: translateX(50%)
+        right: 0
         font-size: 2.3rem
+        text-align: center
+        color: rgb(255, 255, 255)
         line-height: 0.741
         letter-spacing: 0.27em
         text-transform: uppercase
@@ -22,107 +42,115 @@
         color: #ffffff
         background-color: #fc961d
         padding: 0.4em 0.4em 0.27em 0.675em
-        @media ( max-width: 1660px )
-            font-size: 1.8rem
-        @media ( max-width: 1300px )
+        @media ( max-width: 1430px )
+            font-size: 2rem
+        @media ( max-width: 980px )
+            left: 0
+            right: inherit
+        @media ( max-width: 860px )
+            width: 100%
+        @media ( max-width: 767px )
             font-size: 1.5rem
-        @media ( max-width: 1090px )
-            font-size: 1.3rem
-    &__body
-        font-size: 1rem
-        padding: 10em 3.125em 3.125em 3.125em
-        display: flex
-        width: 100%
-        height: 100%
-        justify-content: center
-        align-items: center
-        @media ( max-width: 1400px )
-            font-size: 0.8rem
+        @media ( max-width: 740px )
+            font-size: 1.2rem
     &__form
+        margin-top: 3.5em
+        width: 30em
         font-size: 1rem
-        width: 25em
-        padding-right: 2.5em
         img 
             width: 100%
         @media ( max-width: 1400px )
             font-size: 0.8rem
+        @media ( max-width: 470px )
+            width: 100%
+        .form 
+            padding: 25px
+            border: 1px solid #fc961d
+        .form__tel, .form__name
+            padding: 1em 1.5em
+            margin-bottom: 1.5em
     &__info
-        width: 25em
-        padding-left: 2.5em
-        @media ( max-width: 1400px )
-            font-size: 0.8rem
+        padding-left: 40px
     &__address
-        padding-bottom: 15px
+        padding-bottom: 20px
         position: relative
         &::before
             content: ''
             font-size: 1rem
             position: absolute
-            top: 0.75em
-            left: -1.56em
+            top: 0.1em
+            left: -1.9em
             background: url('../img/map.svg') no-repeat
             background-size: cover
-            width: 1.125em
-            height: 1.125em
+            width: 1.325em
+            height: 1.325em
             @media ( max-width: 1400px )
                 font-size: 0.8rem
         address 
             font-style: normal
-            text-transform: uppercase
             color: rgba(0,0,0,0.55)
             font-size: 1.3rem
             font-weight: 300
-            letter-spacing: 5px
+            letter-spacing: 3px
             line-height: 1.2
             @media ( max-width: 1400px )
                 font-size: 0.85rem
     &__tel
         position: relative
-        padding-bottom: 15px
+        padding-bottom: 20px
         text-transform: uppercase
         font-size: 1.3rem
         font-weight: 300
-        letter-spacing: 5px
+        letter-spacing: 3px
         line-height: 1
         &::before
             content: ''
             font-size: 1rem
             position: absolute
-            top: 0
-            left: -1.56em
+            top: -3px
+            left: -2em
             background: url('../img/smartphone.svg') no-repeat
             background-size: cover
-            width: 1.0625em
-            height: 1.0625em
+            width: 1.4625em
+            height: 1.4625em
             @media ( max-width: 1400px )
                 font-size: 0.8rem
         a 
             color: rgba(0,0,0,0.55)
             &:hover
                 border-bottom: 1px solid #fc961d
+        @media ( max-width: 1400px )
+            font-size: 0.85rem
     &__email
         position: relative
         font-style: normal
-        text-transform: uppercase
         color: rgba(0,0,0,0.55)
         font-size: 1.3rem
         font-weight: 300
-        letter-spacing: 5px
+        letter-spacing: 3px
         line-height: 1.2
         &::before
             content: ''
             font-size: 1rem
             position: absolute
-            top: 0.1875em
-            left: -1.56em
+            top: 0
+            left: -2em
             background: url('../img/email.svg') no-repeat
             background-size: cover
-            width: 0.9375em
-            height: 0.9375em
+            width: 1.25em
+            height: 1.25em
             @media ( max-width: 1400px )
                 font-size: 0.8rem
         a 
             color: rgba(0,0,0,0.55)
             &:hover
                 border-bottom: 1px solid #fc961d
-                
+        @media ( max-width: 1400px )
+            font-size: 0.85rem
+    &__logo
+        margin-top: 50px
+        width: 40%
+        img 
+            width: 100%
+        @media ( max-width: 767px )
+            width: 50%
