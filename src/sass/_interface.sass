@@ -30,6 +30,8 @@
             height: 100%
     @media ( min-width: 1500px )
         font-size: 1.3rem
+    @media (max-width: 380px)
+        font-size: 0.8rem
 
 .main
     &__nav
@@ -42,12 +44,21 @@
         align-items: center
         @media ( max-width: 1400px ) 
             font-size: 0.8rem
-    &__phone 
-        margin-right: 20px
-        display: flex
-        flex-direction: column
         @media ( max-width: 600px ) 
-            display: none
+            flex-direction: column-reverse
+            align-items: flex-end
+    &__phone 
+        font-size: 1rem
+        margin-right: 1.25em
+        display: flex
+        flex-direction: column 
+        @media ( max-width: 600px ) 
+            margin-right: 0
+            margin-top: 1.25em
+            align-items: flex-end
+        @media (max-width: 380px)
+            font-size: 0.8rem
+            margin-top: 2.25em
     &__link
         font-size: 1.2rem
         margin-right: 50px
@@ -68,6 +79,8 @@
                 font-size: 0.8rem
         &:hover
             color: #dddddd
+        @media ( max-width: 600px )
+            margin-right: 0
 
 .lang__list 
     display: flex
