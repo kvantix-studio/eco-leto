@@ -27,6 +27,9 @@
     background: url('../img/catalog/catalog-4-bg-left.jpg') no-repeat
     background-size: contain
     background-position-y: top
+    @media ( max-width: 1300px )
+        background-size: 25%
+        background-position-y: center
 .catalog__title.tomat
     background-color: #D80001
 
@@ -48,7 +51,8 @@
         top: 1.358em
         font-size: 2.3rem
         color: rgb(255, 255, 255)
-        line-height: 0.741
+        line-height: 1
+        text-align: center
         letter-spacing: 0.27em
         text-transform: uppercase
         font-weight: 300
@@ -70,8 +74,6 @@
             font-size: 2rem
         @media ( max-width: 830px )
             font-size: 1.5rem
-            left: 50%
-            transform: translateX(-50%)
         @media ( max-width: 740px )
             font-size: 1.2rem
     &__list
@@ -86,6 +88,10 @@
             font-size: 0.65rem
         @media ( max-width: 1300px )
             margin-top: 12.3em
+        @media ( max-width: 830px )
+            margin-left: 0
+            margin-right: 0
+            margin-top: 10em
     &-item 
         width: 20.6em
         margin: 0 1em 2em 1em

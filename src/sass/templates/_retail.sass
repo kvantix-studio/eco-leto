@@ -1,8 +1,5 @@
 #retail 
     position: relative
-    background: url('../img/retail-bg.jpg') no-repeat
-    background-size: 100%
-    background-position-y: top
 
 .retail
     &__text 
@@ -23,8 +20,11 @@
                 width: 100%
                 height: 1px
                 background-color: #fc961d
+                @media ( max-width: 480px )
+                    display: none
     &-slider
         &__prev
+            z-index: 100
             font-size: 1rem
             background: url('../img/arrow-prev.svg') no-repeat
             background-size: cover
@@ -38,6 +38,7 @@
             @media ( max-width: 1150px )
                 font-size: 0.5rem
         &__next
+            z-index: 100
             font-size: 1rem
             background: url('../img/arrow-prev.svg') no-repeat
             background-size: cover
@@ -53,18 +54,28 @@
     &__content 
         font-size: 1rem
         width: 100%
+        height: 50%
         padding: 3.125em
-        position: absolute
-        top: 50%
-        bottom: 0
         background-color: #ffffff
         display: flex
         flex-direction: column
         justify-content: space-around
         @media ( max-width: 1740px )
             font-size: 0.5rem
+    &__head
+        position: relative
+        background: url('../img/retail-bg.jpg') no-repeat
+        background-size: cover
+        background-position-y: top
+        height: 50%
         @media ( max-width: 1300px )
-            position: inherit
+            height: 370px
+        @media ( max-width: 1200px )
+            height: 350px
+        @media ( max-width: 1100px )
+            height: 300px
+        @media ( max-width: 950px )
+            height: 250px
     &__list 
         display: flex
         justify-content: center
@@ -84,25 +95,31 @@
             font-size: 0.8rem
     &__title
         position: absolute
-        top: -50%
+        top: 50%
         transform: translateY(-50%)
-        right: 50%
-        transform: translateX(50%)
+        left: 50%
+        transform: translateX(-50%)
         font-size: 2.3rem
         color: rgb(255, 255, 255)
-        line-height: 0.741
+        line-height: 1
+        text-align: center
         letter-spacing: 0.27em
         text-transform: uppercase
         font-weight: 300
         color: #ffffff
         background-color: #fc961d
         padding: 0.4em 0.4em 0.27em 0.675em
+        width: fit-content
         @media ( max-width: 1660px )
             font-size: 1.8rem
         @media ( max-width: 1300px )
-            font-size: 1.5rem
-        @media ( max-width: 1090px )
+            font-size: 1.7rem
+        @media ( max-width: 860px )
             font-size: 1.3rem
+        @media ( max-width: 740px )
+            font-size: 1.2rem
+        @media ( max-width: 350px )
+            top: 42%
 
 .retail-slider .slick-list 
     width: 85%
