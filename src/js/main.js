@@ -44,17 +44,23 @@ $('.retail-slider').slick({
 
 (function() {
   
-    var hamburger = {
-      navToggle: document.querySelector('.nav-toggle'),
-      nav: document.querySelector('nav'),
+  const hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('nav'),
+
+    doToggle: function() {
+      this.navToggle.classList.toggle('expanded');
+      this.nav.classList.toggle('expanded');
+    }
+  };
+
+  document.addEventListener('click', e => {
+    if (e.target != hamburger.navToggle && e.target != hamburger.nav && e.target != document.querySelector('.nav-toggle-bar')) {
+      hamburger.nav.classList.remove('expanded');
+      hamburger.navToggle.classList.remove('expanded');
+    } else {
+      hamburger.doToggle();
+    }
+  });
   
-      doToggle: function(e) {
-        this.navToggle.classList.toggle('expanded');
-        this.nav.classList.toggle('expanded');
-      }
-    };
-  
-    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  
-  }());
+}());
